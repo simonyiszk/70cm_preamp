@@ -1,0 +1,345 @@
+EESchema Schematic File Version 4
+LIBS:70cm_preamp-cache
+EELAYER 26 0
+EELAYER END
+$Descr User 8465 5512
+encoding utf-8
+Sheet 1 1
+Title "435MHz LNA"
+Date "2019-12-15"
+Rev ""
+Comp "HA5KFU"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Amplifier:ADL5523 U2
+U 1 1 5DF66BE3
+P 5050 2300
+F 0 "U2" H 5100 2050 50  0000 L CNN
+F 1 "ADL5523" H 5100 2150 50  0000 L CNN
+F 2 "Package_CSP:LFCSP-8-1EP_3x2mm_P0.5mm_EP1.6x1.65mm_HandSolder" H 4650 2500 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADL5523.pdf" H 4750 2600 50  0001 C CNN
+	1    5050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J2
+U 1 1 5DF66D76
+P 5750 2300
+F 0 "J2" H 5849 2276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5849 2185 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 5750 2300 50  0001 C CNN
+F 3 " ~" H 5750 2300 50  0001 C CNN
+	1    5750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5DF66E30
+P 5000 2550
+F 0 "#PWR06" H 5000 2300 50  0001 C CNN
+F 1 "GND" H 5005 2377 50  0000 C CNN
+F 2 "" H 5000 2550 50  0001 C CNN
+F 3 "" H 5000 2550 50  0001 C CNN
+	1    5000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5DF66E82
+P 5750 2550
+F 0 "#PWR07" H 5750 2300 50  0001 C CNN
+F 1 "GND" H 5755 2377 50  0000 C CNN
+F 2 "" H 5750 2550 50  0001 C CNN
+F 3 "" H 5750 2550 50  0001 C CNN
+	1    5750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L2
+U 1 1 5DF66EC3
+P 4650 2300
+F 0 "L2" V 4840 2300 50  0000 C CNN
+F 1 "8n2" V 4749 2300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4650 2300 50  0001 C CNN
+F 3 "~" H 4650 2300 50  0001 C CNN
+F 4 "93-02-56" V 4650 2300 50  0001 C CNN "Lomex"
+	1    4650 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5DF66F4A
+P 5200 2000
+F 0 "R1" H 5130 1954 50  0000 R CNN
+F 1 "1k3" H 5130 2045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5130 2000 50  0001 C CNN
+F 3 "~" H 5200 2000 50  0001 C CNN
+	1    5200 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5200 1850 5000 1850
+Wire Wire Line
+	5000 1850 5000 2050
+$Comp
+L Device:L L3
+U 1 1 5DF66FF5
+P 5000 1700
+F 0 "L3" H 5053 1746 50  0000 L CNN
+F 1 "15n" H 5053 1655 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5000 1700 50  0001 C CNN
+F 3 "~" H 5000 1700 50  0001 C CNN
+F 4 "93-01-57" H 5000 1700 50  0001 C CNN "Lomex"
+	1    5000 1700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5000 1850
+$Comp
+L Device:C C3
+U 1 1 5DF67066
+P 4600 1700
+F 0 "C3" H 4715 1746 50  0000 L CNN
+F 1 "100n" H 4715 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4638 1550 50  0001 C CNN
+F 3 "~" H 4600 1700 50  0001 C CNN
+F 4 "82-13-28" H 4600 1700 50  0001 C CNN "Lomex"
+	1    4600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5DF670D8
+P 4600 1850
+F 0 "#PWR04" H 4600 1600 50  0001 C CNN
+F 1 "GND" H 4605 1677 50  0000 C CNN
+F 2 "" H 4600 1850 50  0001 C CNN
+F 3 "" H 4600 1850 50  0001 C CNN
+	1    4600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Filter:TA0693 U1
+U 1 1 5DF68096
+P 4200 2400
+F 0 "U1" H 4050 2600 50  0000 C CNN
+F 1 "TA0693" H 4200 2050 50  0000 C CNN
+F 2 "Filter:TA0693A_HandSolder" H 3750 2650 50  0001 C CNN
+F 3 "https://www.taisaw.com/upload/product/TA0693A%20_Rev.1.0_.pdf" H 3800 2750 50  0001 C CNN
+	1    4200 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5DF68135
+P 4550 2850
+F 0 "#PWR05" H 4550 2600 50  0001 C CNN
+F 1 "GND" H 4555 2677 50  0000 C CNN
+F 2 "" H 4550 2850 50  0001 C CNN
+F 3 "" H 4550 2850 50  0001 C CNN
+	1    4550 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 2850 4550 2750
+Wire Wire Line
+	4550 2450 4500 2450
+Wire Wire Line
+	4500 2550 4550 2550
+Connection ~ 4550 2550
+Wire Wire Line
+	4550 2550 4550 2450
+Wire Wire Line
+	4500 2650 4550 2650
+Connection ~ 4550 2650
+Wire Wire Line
+	4550 2650 4550 2550
+Wire Wire Line
+	4500 2750 4550 2750
+Connection ~ 4550 2750
+Wire Wire Line
+	4550 2750 4550 2650
+$Comp
+L power:GND #PWR02
+U 1 1 5DF6831B
+P 3850 2850
+F 0 "#PWR02" H 3850 2600 50  0001 C CNN
+F 1 "GND" H 3855 2677 50  0000 C CNN
+F 2 "" H 3850 2850 50  0001 C CNN
+F 3 "" H 3850 2850 50  0001 C CNN
+	1    3850 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2850 3850 2650
+Wire Wire Line
+	3850 2550 3900 2550
+Wire Wire Line
+	3900 2650 3850 2650
+Connection ~ 3850 2650
+Wire Wire Line
+	3850 2650 3850 2550
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5DF686B1
+P 3300 2300
+F 0 "J1" H 3450 2300 50  0000 C CNN
+F 1 "Conn_Coaxial" H 3650 2200 50  0000 C CNN
+F 2 "Connector_Coaxial:BNC_Amphenol_B6252HB-NPP3G-50_Horizontal" H 3300 2300 50  0001 C CNN
+F 3 " ~" H 3300 2300 50  0001 C CNN
+	1    3300 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5DF68779
+P 3300 2500
+F 0 "#PWR01" H 3300 2250 50  0001 C CNN
+F 1 "GND" H 3305 2327 50  0000 C CNN
+F 2 "" H 3300 2500 50  0001 C CNN
+F 3 "" H 3300 2500 50  0001 C CNN
+	1    3300 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5DF6895B
+P 5550 2150
+F 0 "L1" H 5603 2196 50  0000 L CNN
+F 1 "22n" H 5603 2105 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5550 2150 50  0001 C CNN
+F 3 "~" H 5550 2150 50  0001 C CNN
+F 4 "93-01-83" H 5550 2150 50  0001 C CNN "Lomex"
+	1    5550 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DF69295
+P 5550 1850
+F 0 "R2" H 5620 1896 50  0000 L CNN
+F 1 "0" H 5620 1805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 5480 1850 50  0001 C CNN
+F 3 "~" H 5550 1850 50  0001 C CNN
+	1    5550 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DF6A74A
+P 3650 2450
+F 0 "R3" H 3720 2496 50  0000 L CNN
+F 1 "10k" H 3720 2405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3580 2450 50  0001 C CNN
+F 3 "~" H 3650 2450 50  0001 C CNN
+	1    3650 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2300 3650 2300
+Connection ~ 3650 2300
+Wire Wire Line
+	3650 2300 3900 2300
+$Comp
+L power:GND #PWR0101
+U 1 1 5DF6A96F
+P 3650 2600
+F 0 "#PWR0101" H 3650 2350 50  0001 C CNN
+F 1 "GND" H 3655 2427 50  0000 C CNN
+F 2 "" H 3650 2600 50  0001 C CNN
+F 3 "" H 3650 2600 50  0001 C CNN
+	1    3650 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 1550 5000 1550
+Wire Wire Line
+	5400 2300 5550 2300
+Wire Wire Line
+	5550 1700 5550 1550
+Wire Wire Line
+	5550 1550 5000 1550
+Connection ~ 5000 1550
+Connection ~ 5550 2300
+Wire Wire Line
+	5750 2550 5750 2500
+$Comp
+L Device:C C2
+U 1 1 5DF6C18E
+P 4200 1700
+F 0 "C2" H 4315 1746 50  0000 L CNN
+F 1 "100p" H 4315 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4238 1550 50  0001 C CNN
+F 3 "~" H 4200 1700 50  0001 C CNN
+	1    4200 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5DF6C20C
+P 4200 1850
+F 0 "#PWR08" H 4200 1600 50  0001 C CNN
+F 1 "GND" H 4205 1677 50  0000 C CNN
+F 2 "" H 4200 1850 50  0001 C CNN
+F 3 "" H 4200 1850 50  0001 C CNN
+	1    4200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5DF6C31F
+P 3850 1700
+F 0 "C1" H 3968 1746 50  0000 L CNN
+F 1 "1u" H 3968 1655 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-10_Kemet-I" H 3888 1550 50  0001 C CNN
+F 3 "~" H 3850 1700 50  0001 C CNN
+F 4 "92-01-85" H 3850 1700 50  0001 C CNN "Lomex"
+	1    3850 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5DF6C418
+P 3850 1850
+F 0 "#PWR03" H 3850 1600 50  0001 C CNN
+F 1 "GND" H 3855 1677 50  0000 C CNN
+F 2 "" H 3850 1850 50  0001 C CNN
+F 3 "" H 3850 1850 50  0001 C CNN
+	1    3850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1550 4200 1550
+Connection ~ 4600 1550
+Connection ~ 4200 1550
+Wire Wire Line
+	4200 1550 4600 1550
+$Comp
+L power:GND #PWR0102
+U 1 1 5DF6C928
+P 3350 1850
+F 0 "#PWR0102" H 3350 1600 50  0001 C CNN
+F 1 "GND" H 3355 1677 50  0000 C CNN
+F 2 "" H 3350 1850 50  0001 C CNN
+F 3 "" H 3350 1850 50  0001 C CNN
+	1    3350 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3850 1550
+$Comp
+L Diode:1N4148 D1
+U 1 1 5DF6CDEB
+P 3350 1700
+F 0 "D1" V 3304 1779 50  0000 L CNN
+F 1 "1N4148" V 3395 1779 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 3350 1525 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 3350 1700 50  0001 C CNN
+	1    3350 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 1550 3850 1550
+$EndSCHEMATC
