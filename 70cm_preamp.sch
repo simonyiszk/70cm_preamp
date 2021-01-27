@@ -20,7 +20,9 @@ P 7550 3950
 F 0 "J2" H 7649 3926 50  0000 L CNN
 F 1 "RF_OUT" H 7649 3835 50  0000 L CNN
 F 2 "70cm_preamp:SMA_Amphenol_132289_EdgeMount" H 7550 3950 50  0001 C CNN
-F 3 " ~" H 7550 3950 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/b4dd5925cecd78bf6385fa91265dd943/RF2-145A-T-17-50-G-HDW.pdf" H 7550 3950 50  0001 C CNN
+F 4 "43-28-28" H 7550 3950 50  0001 C CNN "Lomex"
+F 5 "RF2-145A-T-17-50-G-HDW " H 7550 3950 50  0001 C CNN "TME"
 	1    7550 3950
 	1    0    0    -1  
 $EndComp
@@ -163,7 +165,9 @@ P 4250 3950
 F 0 "J1" H 4500 3950 50  0000 C CNN
 F 1 "RF_IN" H 4450 3850 50  0000 C CNN
 F 2 "70cm_preamp:SMA_Amphenol_132289_EdgeMount" H 4250 3950 50  0001 C CNN
-F 3 " ~" H 4250 3950 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/b4dd5925cecd78bf6385fa91265dd943/RF2-145A-T-17-50-G-HDW.pdf" H 4250 3950 50  0001 C CNN
+F 4 "43-28-28" H 4250 3950 50  0001 C CNN "Lomex"
+F 5 "RF2-145A-T-17-50-G-HDW " H 4250 3950 50  0001 C CNN "TME"
 	1    4250 3950
 	-1   0    0    -1  
 $EndComp
@@ -286,8 +290,9 @@ U 1 1 5DF6CDEB
 P 4250 2950
 F 0 "D1" V 4204 3029 50  0000 L CNN
 F 1 "1N4148" V 4295 3029 50  0000 L CNN
-F 2 "70cm_preamp:D_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4250 2775 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4250 2950 50  0001 C CNN
+F 2 "70cm_preamp:D_SOD-123" H 4250 2775 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/8a0f4bd1d0e0495ebb1834ba060fbfa0/CD4148.pdf" H 4250 2950 50  0001 C CNN
+F 4 "CD4148WT(0603C)" H 4250 2950 50  0001 C CNN "TME"
 	1    4250 2950
 	0    1    1    0   
 $EndComp
@@ -303,6 +308,7 @@ F 0 "U1" H 5350 4375 50  0000 C CNN
 F 1 "TA0693-Filter" H 5350 4284 50  0000 C CNN
 F 2 "70cm_preamp:TA0693-Filter" H 4900 4300 50  0001 C CNN
 F 3 "https://www.taisaw.com/upload/product/TA0693A%20_Rev.1.0_.pdf" H 4950 4400 50  0001 C CNN
+F 4 "Alternative (different size!): AFS434S3-T" H 5350 4050 50  0001 C CNN "Farnell"
 	1    5350 4050
 	1    0    0    -1  
 $EndComp
