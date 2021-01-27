@@ -1,0 +1,49 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ADL5523-RF_Amplifier
+#
+DEF ADL5523-RF_Amplifier U 0 40 Y Y 1 F N
+F0 "U" -300 300 50 H V C CNN
+F1 "ADL5523-RF_Amplifier" -200 400 50 H V C CNN
+F2 "Package_CSP:LFCSP-8-1EP_3x2mm_P0.5mm_EP1.6x1.65mm" -400 200 50 H I C CNN
+F3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADL5523.pdf" -300 300 50 H I C CNN
+DRAW
+T 0 -50 0 50 0 0 0 LNA Normal 0 C C
+P 5 0 1 0 -150 0 -150 200 250 0 -150 -200 -150 0 f
+X ~ 1 150 150 100 D 50 50 1 1 I
+X ~ 2 -250 0 100 R 50 50 1 1 I
+X ~ 7 350 0 100 L 50 50 1 1 O
+X ~ 8 -50 250 100 D 50 50 1 1 I
+X ~ 9 -50 -250 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# TA0693-Filter
+#
+DEF TA0693-Filter U 0 40 Y Y 1 F N
+F0 "U" -150 200 50 H V C CNN
+F1 "TA0693-Filter" -50 -350 50 H V C CNN
+F2 "Filter:TA0693A" -450 250 50 H I C CNN
+F3 "https://www.taisaw.com/upload/product/TA0693A%20_Rev.1.0_.pdf" -400 350 50 H I C CNN
+DRAW
+A -56 110 56 -625 0 0 1 0 N -30 60 0 110
+A 56 110 56 1800 -1175 0 1 0 N 0 110 30 60
+S -200 150 200 -400 0 1 0 f
+P 2 0 1 0 -60 -30 -50 -30 N
+P 2 0 1 0 60 -50 -60 -50 N
+P 2 0 1 0 60 -30 -50 -30 N
+P 4 0 1 0 -60 -50 -80 -50 -80 0 90 0 N
+P 4 0 1 0 60 -30 80 -30 80 -80 -90 -80 N
+X G 1 300 -50 100 L 50 50 1 1 I
+X RF 2 -300 100 100 R 50 50 1 1 B
+X N 3 300 -150 100 L 50 50 1 1 I
+X CGND 4 -300 -150 100 R 50 50 1 1 I
+X D 5 300 -250 100 L 50 50 1 1 I
+X RF 6 300 100 100 L 50 50 1 1 B
+X ~ 7 300 -350 100 L 50 50 1 1 I
+X CGND 8 -300 -250 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
