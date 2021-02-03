@@ -10,6 +10,7 @@ Előerősítő 70 cm-es sávra
 * Kapcsrajz szimbólumok külön könyvtárba rendszerezése
 * Rajzolatok külön könyvtárba rendszerezése
 * cache fájlok hozzáadása .gitignore-hoz
+* Bias Tee (tápfeladó)
 
 # Megjegyzés
 A 'lib-table' fájlok hozzáadják a kapcsrajz szimbólum és rajzolatokat tartalmazó fájlokat a könyvtárak közé.
