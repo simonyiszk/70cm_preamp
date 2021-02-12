@@ -11,6 +11,7 @@ Előerősítő 70 cm-es sávra
 * Rajzolatok külön könyvtárba rendszerezése
 * cache fájlok hozzáadása .gitignore-hoz
 * Bias Tee (tápfeladó)
+* "RF" megjelölésű alkatrészek: rezonanciafrekvenciájuk kritikus
 
 # Megjegyzés
 A 'lib-table' fájlok hozzáadják a kapcsrajz szimbólum és rajzolatokat tartalmazó fájlokat a könyvtárak közé.
