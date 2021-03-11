@@ -1,4 +1,4 @@
-update=2021. márc. 10., szerda, 14:00:33 CET
+update=2021. márc. 11., csütörtök, 14:53:25 CET
 version=1
 last_client=kicad
 [general]
@@ -41,7 +41,9 @@ MinHoleToHole=0.25
 TrackWidth1=0.25
 TrackWidth2=0.254
 TrackWidth3=0.381
-TrackWidth4=1.46
+TrackWidth4=0.81
+TrackWidth5=1.3
+TrackWidth6=1.46
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -250,8 +252,19 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=Tapvonal_50
-Clearance=0.15
+Name=Tapvonal_vastag
+Clearance=0.33
+TrackWidth=1.3
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Tapvonal_vekony
+Clearance=0.12
 TrackWidth=0.81
 ViaDiameter=0.8
 ViaDrill=0.4
