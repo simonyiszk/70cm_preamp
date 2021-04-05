@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "434 MHz LNA"
+Title "435 MHz LNA"
 Date "2021 január"
 Rev "v02"
 Comp "HA5KFU"

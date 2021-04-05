@@ -1,0 +1,23 @@
+Előerősítő 70cm-es sávra: PGA-103+ előerősítő, SF2446E akusztikus szűrő
+
+Áramkörök:
+#1      Szűrő + erősítő + kompenzáló hálózat
+#2      Szűrő + erősítő + kompenzáló hálózat
+#2.5    #2-es áramkör javítás után
+#3      Szűrő + erősítő
+
+ 1.ASC  #1   átvitel 1M-1G erősítő KI
+ 2.ASC  #1   átvitel 400M-480M erősítő KI
+ 3.ASC  #1   átvitel 1M-1G erősítő BE
+ 4.ASC  #1   átvitel 400M-480M erősítő BE
+ 5.ASC  #2   átvitel 1M-1G erősítő KI
+ 6.ASC  #2   átvitel 400M-480M erősítő KI
+ 7.ASC  #2   átvitel 1M-1G erősítő BE
+ 8.ASC  #2   átvitel 400M-480M erősítő BE
+ 9.ASC  #3   átvitel 1M-1G erősítő KI
+10.ASC  #3   átvitel 400M-480M erősítő KI
+11.ASC  #3   átvitel 1M-1G erősítő BE
+12.ASC  #3   átvitel 400M-480M erősítő BE
+14.ASC  #2.5 átvitel 400M-480M erősítő BE
+
+Igen, a 13-ast elfelejtettük lemérni.. Pereljetek be!
