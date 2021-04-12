@@ -1,10 +1,12 @@
 clear all
 
-d5  = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/5.ASC');
-d6  = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/6.ASC');
-d7  = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/7.ASC');
-d8  = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/8.ASC');
-d14 = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/14.ASC');
+path = '/home/keresztes/Kafu';
+
+d5  = importdata([ path '/70cm_preamp/dokumentacio/octave/5.ASC' ]);
+d6  = importdata([ path '/70cm_preamp/dokumentacio/octave/6.ASC' ]);
+d7  = importdata([ path '/70cm_preamp/dokumentacio/octave/7.ASC' ]);
+d8  = importdata([ path '/70cm_preamp/dokumentacio/octave/8.ASC' ]);
+d14 = importdata([ path '/70cm_preamp/dokumentacio/octave/14.ASC' ]);
 
 f_szeles = d5(:,1)./1e6;
 f_szuk = d6(:,1)./1e6;

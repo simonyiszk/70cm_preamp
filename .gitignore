@@ -32,3 +32,5 @@ fp-info-cache
 *.log
 *.out
 *.synctex.gz
+*.toc
+*.pdf

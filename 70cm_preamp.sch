@@ -420,8 +420,6 @@ F 3 "~" H 3000 5250 50  0001 C CNN
 	1    3000 5250
 	-1   0    0    -1  
 $EndComp
-Text Notes 650  7650 0    50   ~ 0
-Dobozok:\n5,1 x 5,1 x 3,2 cm: https://www.tme.eu/hu/details/alu-g0470/univerzalis-keszulekhazak/gainta/g-0470/\n3,8 x 9 x 3 cm: https://www.tme.eu/hu/details/alu-g0123/univerzalis-keszulekhazak/gainta/g-0123/
 $Comp
 L 70cm_preamp:PGA-103+ U2
 U 1 1 60481085

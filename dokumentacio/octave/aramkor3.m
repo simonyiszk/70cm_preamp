@@ -1,9 +1,11 @@
 clear all
 
-d9  = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/9.ASC');
-d10 = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/10.ASC');
-d11 = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/11.ASC');
-d12 = importdata('/home/keresztes/Kafu/70cm_preamp/jegyzokonyv/octave/12.ASC');
+path = '/home/keresztes/Kafu';
+
+d9  = importdata([ path '/70cm_preamp/dokumentacio/octave/9.ASC' ]);
+d10 = importdata([ path '/70cm_preamp/dokumentacio/octave/10.ASC' ]);
+d11 = importdata([ path '/70cm_preamp/dokumentacio/octave/11.ASC' ]);
+d12 = importdata([ path '/70cm_preamp/dokumentacio/octave/12.ASC' ]);
 
 f_szeles = d9(:,1)./1e6;
 f_szuk = d10(:,1)./1e6;
@@ -50,7 +52,7 @@ print -dpng aramkor3_11.png "-S1920,1080"
 figure
 plot(f_szuk, S21_12, 'linewidth', 3)
 set(gca, 'fontsize', 35)
-ylim([-65 0])
+ylim([-60 0])
 grid
 title('#3-as áramkör átvitel (erősítő BE)')
 xlabel('Frekvencia [MHz]')
