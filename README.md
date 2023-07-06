@@ -14,6 +14,9 @@ Előerősítő 70 cm-es sávra
 * Bias Tee (tápfeladó)
 * "RF" megjelölésű alkatrészek: rezonanciafrekvenciájuk kritikus
 
+# PGA-103+
+* Új erősítő: PGA-103+
+* Új szűrő: SF2446E
 
 # Megjegyzés
 A 'lib-table' fájlok hozzáadják a kapcsrajz szimbólum és rajzolatokat tartalmazó fájlokat a könyvtárak közé.
