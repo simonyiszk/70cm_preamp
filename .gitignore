@@ -34,3 +34,5 @@ fp-info-cache
 *.synctex.gz
 *.toc
 *.pdf
+
+70cm_preamp-backups/
