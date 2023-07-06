@@ -2,11 +2,12 @@ Előerősítő 70 cm-es sávra
 ===========
 
 # Specifikáció
-* 434 MHz középfrekcencia
-* 20 MHz sávszélesség
+* 435 MHz középfrekcencia
+* 23 MHz sávszélesség
 
 # v02 változások
-* L3 tekercs betervezése a tápfeladóhoz
+* Új erősítő: PGA-103+
+* Új szűrő: SF2446E
 * Kapcsrajz szimbólumok külön könyvtárba rendszerezése
 * Rajzolatok külön könyvtárba rendszerezése
 * cache fájlok hozzáadása .gitignore-hoz
